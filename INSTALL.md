@@ -1,5 +1,5 @@
 ===========================================
-Monolithic FSI (rebkit-based) solvers Instructions
+Instructions - rebkit-based solvers 
 ===========================================
 
 Pre-requisites
@@ -32,21 +32,21 @@ doing this begins the example simulation and creates a "Figures" folder where th
 
 Running your own Simulation
 ------------------
-***_Mesh * MAT file generation_***<br>
+- ***_Mesh * MAT file generation_***<br>
 See this brief tutorial on how to set up the **.mat** files needed to perform your own simulations. These .mat files define the geometric/spatial properties of the problem you intend to investigate. Pay special attention on how to define and identify the boundary and interface surfaces for each of the respective domains. 
 
-***_Editting main_FSI.m_***<br>
+- ***_Editting main_FSI.m_***<br>
 The only adjustments that are needed in this file to run your own simulations are 
 
-*line 10 ;* load('flap_S.mat')
+*line 10 :* load('flap_S.mat')
 
-*line 17 ;* load('flap_S.mat')
+*line 17 :* load('flap_S.mat')
 
-*line 29 ;* vtk_filename = 'Figures/Flap_';%[];% 
+*line 29 :* vtk_filename = 'Figures/Flap_'; 
 
 These lines are where you indicate the names you chose for the domain specific .mat files that you will be importing as well as the prefix string that you intend to assigned to your output data.  
 
-***_Editting NS_data.m and CSM_data.m_***<br>
+- ***_Editting NS_data.m and CSM_data.m_***<br>
 These two files are the primary locations where you define all the domain specific parameters needed for you unqiue problem. Parameters that you are able to set include: 
 
 1. material properties 
@@ -59,7 +59,7 @@ These two files are the primary locations where you define all the domain specif
 
 
 ===========================================
-Monolithic FSI CFEI solvers Instructions
+Instructions - CFEI-based solvers 
 ===========================================
 
 Pre-requisites
