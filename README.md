@@ -49,7 +49,7 @@ In particular, it includes straightforward implementations of many of the algori
 
 For further details please visit [redbKIT website](http://redbkit.github.io/redbKIT/).
 
-## License
+### License
 -------
 
 **redbKIT is distributed under BSD 2-clause license**
@@ -81,6 +81,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 redbKIT was developed and maintained by [`Federico Negri`](https://www.linkedin.com/in/negrifederico/). Paola Gervasio (Università degli Studi di Brescia) is gratefully acknowledged for granting the use of parts of the finite element code MLife.
 
 
-### Contact
+## Contact
 -------
-If you have any questions regarding the contents of this repository or the use of these solvers, please feel to email me at <josetg@vt.com>.
+If you have any questions regarding the contents of this repository or the use of these solvers, please feel to email me at <josetg@vt.edu>.
