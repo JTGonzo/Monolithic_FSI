@@ -4,7 +4,7 @@ These codes were very recently uploaded (March 20th, 2024) from my system and ha
 `While this disclaimer is being displayed` **I suggest the user refrain from using the CFEI solvers** and exercise *some* caution when using the deconstructed **redbkit** solvers provided.
 
 # Monolithic_FSI
-This repository contains three 2D and 3D high-fidelity computational fluid-structure interaction solvers built (mainly) in MATLAB. They are primarily focused on solving two-fields problems monolithically, where the incompressible Navier-Stokes equations - written in the Arbitrary Lagrangian Eulerian (ALE) form - are coupled with the nonlinear elastodynamics structural equations. The numerical strategies employed in the above tools fall into the following three catagoriess: 
+This repository contains three 2D and 3D high-fidelity computational fluid-structure interaction solvers built (mainly) in MATLAB. They are primarily focused on solving two-field problems monolithically, where the incompressible Navier-Stokes equations - written in the Arbitrary Lagrangian Eulerian (ALE) form - are coupled with the nonlinear elastodynamics structural equations. The numerical strategies employed in the above tools fall into the following three catagoriess: 
 
 1. Fully Implicit Nonlinear FSI 
 2. Semi-Implicit Geometry–Convective Explicit (GCE) 
