@@ -4,7 +4,7 @@ These codes were very recently uploaded (March 20th, 2024) from my system and ha
 `While this disclaimer is being displayed` **I suggest the user refrain from using the CFEI solvers** and exercise *some* caution when using the deconstructed **redbkit** solvers provided.
 
 # Monolithic_FSI
-This repository contains three 2D and 3D high-fidelity computational fluid-structure interaction solvers built (mainly) in MATLAB. They are primarily focused on solving two-fields problems, where the incompressible Navier-Stokes equations - written in the Arbitrary Lagrangian Eulerian (ALE) form - are coupled with the nonlinear elastodynamics structural equation. The numerical strategy employed fall into the following three catagoriess: 
+This repository contains three 2D and 3D high-fidelity computational fluid-structure interaction solvers built (mainly) in MATLAB. They are primarily focused on solving two-fields problems monolithically, where the incompressible Navier-Stokes equations - written in the Arbitrary Lagrangian Eulerian (ALE) form - are coupled with the nonlinear elastodynamics structural equations. The numerical strategies employed in the above tools fall into the following three catagoriess: 
 
 1. Fully Implicit Nonlinear FSI 
 2. Semi-Implicit Geometry–Convective Explicit (GCE) 
@@ -18,13 +18,13 @@ they are each of the Galerkin least-squares finite element (FE) variety and are 
 For detailed configuartion, installion and operation instructions, in particular for the redbKIT based solvers, please follow the steps contained in the brief [INSTALL.md](INSTALL.md) file.
 
 ## Solver Details 
-***_CFEI Solver_***
+***_CFEI Solver_***<br>
 The "Combined Field and Explicit Interface" scheme was developed at the [National University of Singapore](https://cde.nus.edu.sg/me/) by the graduate students of my superviosor [Dr. Rajeev Jaiman](https://scholar.google.com/citations?user=iofAU68AAAAJ&hl=en&oi=ao). This technique uses a finite-element spatial discretization for both the fluid and structural equations. It uses stabilized streamline-upwind Petrov-Galerkin (SUPG) P<sup>m</sup>/P<sup>m-1</sup>/P<sup>m</sup> iso-parametric finite elements to satisfy the inf–sup condition. Temporal discretization is achieved via the second-order bacward difference formula in each domain.  
 
 Further reading on this approach can be found in 
 >[**[RKJ16] J. Liu, R. Jaiman, P. Gurugubelli. A stable second-order scheme for fluid–structure interaction with strong added-mass effects **, Journal of Computational Physics, 2014.](https://doi.org/10.1016/j.jcp.2014.04.020)
 
-***_redbKIT Solver_***
+***_redbKIT Solver_***<br>
 The redbKIT-based solvers presented above are bare-bones deconstructions of the original [toolkit](https://github.com/redbKIT/redbKIT). At face value they are exclusively the intellectual property of the original repository with a few original lines of functional code included for initialization, data output and operational purposes. 
 
 These solvers use a finite-element spatial discretization for both the fluid and structural equations. In these particular solvers (as opposed to the original toolkit), we exclusively use P<sup>2</sup>/P<sup>2 finite elements for the structural equations and stable Taylor-Hood P<sup>2</sup>/P<sup>1 finite elements for the fluid equations. A second-order backward difference scheme is adopted for the temporal discretization of the fluid domian whilst the generalized-&alpha; method is used for the structural domian. 
