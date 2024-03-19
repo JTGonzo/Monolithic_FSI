@@ -19,7 +19,7 @@ For detailed configuartion, installion and operation instructions, in particular
 
 ## Solver Details 
 <ins>***CFEI Solver***</ins><br>
-The "Combined Field and Explicit Interface" scheme was developed at the [National University of Singapore](https://cde.nus.edu.sg/me/) by the graduate students of my superviosor [Dr. Rajeev Jaiman](https://scholar.google.com/citations?user=iofAU68AAAAJ&hl=en&oi=ao). This technique uses a finite-element spatial discretization for both the fluid and structural equations. It uses stabilized streamline-upwind Petrov-Galerkin (SUPG) P<sub>m</sub>/P<sub>m-1</sub>/P<sub>m</sub> iso-parametric finite elements to satisfy the inf–sup condition. Temporal discretization is achieved via the second-order bacward difference formula in each domain.  
+The "Combined Field and Explicit Interface" scheme was developed at the [National University of Singapore](https://cde.nus.edu.sg/me/) by the graduate students of my superviosor [Dr. Rajeev Jaiman](https://scholar.google.com/citations?user=iofAU68AAAAJ&hl=en&oi=ao). This technique uses a finite-element spatial discretization for both the fluid and structural equations. It uses stabilized streamline-upwind Petrov-Galerkin (SUPG) P<sub>m</sub>/P<sub>m-1</sub>/P<sub>m</sub> iso-parametric finite elements to satisfy the inf–sup condition. Temporal discretization is achieved via the second-order bacward difference formula in each domain. In this solver class (2D & 3D) we exclusive use a **St. Venant Kirchhoff** constitutive material model for the nonlinear elastodynamics equations. 
 
 Further reading on this approach can be found in 
 >[**[RKJ16] J. Liu, R. Jaiman, P. Gurugubelli. A stable second-order scheme for fluid–structure interaction with strong added-mass effects **, Journal of Computational Physics, 2014.](https://doi.org/10.1016/j.jcp.2014.04.020)
@@ -27,7 +27,10 @@ Further reading on this approach can be found in
 <ins>***redbKIT Solver***</ins><br>
 The redbKIT-based solvers presented above are bare-bones deconstructions (/simplification) of the original [toolkit](https://github.com/redbKIT/redbKIT). At face value they are exclusively the intellectual property of the original repository with a few original lines of functional code included for initialization, data output, and operational purposes. 
 
-These solvers use a finite-element spatial discretization for both the fluid and structural equations. In the above  solvers specifically (as opposed to the original toolkit), we exclusively use higher-order P<sub>2</sub> finite elements for the structural equations and stable Taylor-Hood P<sub>2</sub>/P<sub>1</sub> mixed finite elements for the fluid equations. A second-order backward difference scheme is adopted for the temporal discretization of the fluid domian whilst the generalized-&alpha; method is used for the structural domian. 
+These solvers use a finite-element spatial discretization for both the fluid and structural equations. In the above  solvers specifically (as opposed to the original toolkit), we exclusively use higher-order P<sub>2</sub> finite elements for the structural equations and stable Taylor-Hood P<sub>2</sub>/P<sub>1</sub> mixed finite elements for the fluid equations. A second-order backward difference scheme is adopted for the temporal discretization of the fluid domian whilst the generalized-&alpha; method is used for the structural domian. For both the semi and fully implicit solvers the user is free to use any one of three constitutive material models for the structural mechanics solver; they are: 
+1. Linear Elastic 
+2. St. Venant Kirchhoff 
+3. Nearly-incompressible Neo-Hookean
 
 As described in detail below; while the [**redbKIT**](https://github.com/redbKIT/redbKIT) toolkit should be the primary reference point for the interested reader, it is my belief that the condensed monolithic solvers (as presented here in their simplified intermediary forms) hold their own unique value to the wider student/researcher community. In particular, for the purposes of streamlined learning, efficient tool adoption, and additional/alternative technique development. 
 
