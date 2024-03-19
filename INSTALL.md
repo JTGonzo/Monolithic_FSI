@@ -35,7 +35,7 @@ Running your own Simulation
 <u>***Mesh and .MAT file generation***</u><br>
 See this brief tutorial on how to set up the **.mat** files needed to perform your own simulations. These .mat files define the geometric/spatial properties of the problem you intend to investigate. Pay special attention on how to define and identify the boundary and interface surfaces for each of the respective domains. 
 
-_***Editting main_FSI.m***_<br>
+_Editting main_FSI.m_<br>
 The only adjustments that are needed in this file to run your own simulations are 
 
 *line 10 :* load('flap_S.mat')
