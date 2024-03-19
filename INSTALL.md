@@ -32,10 +32,10 @@ doing this begins the example simulation and creates a "Figures" folder where th
 
 Running your own Simulation
 ------------------
-_***Mesh * MAT file generation***_<br>
+<u>***Mesh * MAT file generation***</u><br>
 See this brief tutorial on how to set up the **.mat** files needed to perform your own simulations. These .mat files define the geometric/spatial properties of the problem you intend to investigate. Pay special attention on how to define and identify the boundary and interface surfaces for each of the respective domains. 
 
-_***Editting main_FSI.m***_<br>
+<u>***Editting main_FSI.m***</u><br>
 The only adjustments that are needed in this file to run your own simulations are 
 
 *line 10 :* load('flap_S.mat')
@@ -46,7 +46,7 @@ The only adjustments that are needed in this file to run your own simulations ar
 
 These lines are where you indicate the names you chose for the domain specific .mat files that you will be importing as well as the prefix string that you intend to assigned to your output data.  
 
-_***Editting NS_data.m and CSM_data.m***_<br>
+<u>***Editting NS_data.m and CSM_data.m***</u><br>
 These two files are the primary locations where you define all the domain specific parameters needed for you unqiue problem. Parameters that you are able to set include: 
 
 1. material properties 
