@@ -32,7 +32,7 @@ doing this begins the example simulation and creates a "Figures" folder where th
 
 Running your own Simulation
 ------------------
-<u>***Mesh and .MAT file generation***</u><br>
+<ins>***Mesh and .MAT file generation***</ins><br>
 See this brief tutorial on how to set up the **.mat** files needed to perform your own simulations. These .mat files define the geometric/spatial properties of the problem you intend to investigate. Pay special attention on how to define and identify the boundary and interface surfaces for each of the respective domains. 
 
 __Editting main_FSI.m__<br>
