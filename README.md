@@ -1,7 +1,7 @@
 # DISCLAIMER!!
 These codes were very recently uploaded (March 20th, 2024) from my system and have yet to be vetted for general distribution/use. I am currently working through commenting, cleaning and re-testing these solver which were put together approximately 2 years ago. Please allow me the next few weeks to clean up the codes so as to make them more instructive, easy to use, and bug-free. 
 
-**<span style="color:blue">some *blue* While this disclaimer is being displayed</span> I suggest the user refrain from using the CFEI solvers** and exercise *some* caution when using the **redbkit** solvers.
+'While this disclaimer is being displayed' **I suggest the user refrain from using the CFEI solvers** and exercise *some* caution when using the **redbkit** solvers.
 
 # Monolithic_FSI
 This repository contains three 2D and 3D high-fidelity computational fluid-structure interaction solvers built (mainly) in MATLAB. The numerical strategy employed fall into the following three catagoriess: 
