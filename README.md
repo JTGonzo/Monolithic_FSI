@@ -25,7 +25,7 @@ Further reading on this approach can be found in
 >[**[RKJ16] J. Liu, R. Jaiman, P. Gurugubelli. A stable second-order scheme for fluid–structure interaction with strong added-mass effects **, Journal of Computational Physics, 2014.](https://doi.org/10.1016/j.jcp.2014.04.020)
 
 <ins>***redbKIT Solver***</ins><br>
-The redbKIT-based solvers presented above are bare-bones deconstructions (/simplification) of the original [toolkit](https://github.com/redbKIT/redbKIT). At face value they are exclusively the intellectual property of the original repository with a few original lines of functional code included for initialization, data output, and operational purposes. 
+The redbKIT-based solvers presented above are bare-bones deconstructions (/simplifications) of the original [toolkit](https://github.com/redbKIT/redbKIT). At face value they are exclusively the intellectual property of the original repository with a few original lines of functional code included for initialization, data output, and operational purposes. 
 
 These solvers use a finite-element spatial discretization for both the fluid and structural equations. In the above  solvers specifically (as opposed to the original toolkit), we exclusively use higher-order P<sub>2</sub> finite elements for the structural equations and stable Taylor-Hood P<sub>2</sub>/P<sub>1</sub> mixed finite elements for the fluid equations. A second-order backward difference scheme is adopted for the temporal discretization of the fluid domian whilst the generalized-&alpha; method is used for the structural domian. For both the semi and fully implicit solvers the user is free to use any one of three constitutive material models for the structural mechanics solver; they are: 
 1. Linear Elastic 
