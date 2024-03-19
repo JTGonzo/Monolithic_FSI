@@ -46,7 +46,7 @@ The only adjustments that are needed in this file to run your own simulations ar
 
 These lines are where you indicate the names you chose for the domain specific .mat files that you will be importing as well as the prefix string that you intend to assigned to your output data.  
 
-__***Editting NS_data.m and CSM_data.m***__<br>
+***__Editting NS_data.m and CSM_data.m__***<br>
 These two files are the primary locations where you define all the domain specific parameters needed for you unqiue problem. Parameters that you are able to set include: 
 
 1. material properties 
