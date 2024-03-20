@@ -15,7 +15,7 @@ they are each of the Galerkin least-squares finite element (FE) variety and are 
 ## Download, Installation and Running
 -------
 
-For detailed configuartion, installion and operation instructions, in particular for the redbKIT based solvers, please follow the steps contained in the brief [INSTALL.md](INSTALL.md) file provided.
+For detailed configuartion, installation and operation instructions, in particular for the redbKIT based solvers, please follow the steps contained in the brief [INSTALL.md](INSTALL.md) file provided.
 
 ## Solver Details 
 <ins>***CFEI Solver***</ins><br>
