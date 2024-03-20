@@ -33,7 +33,7 @@ doing this begins the example simulation, creates a "Figures" folder where the s
 Running your own Simulation
 ------------------
 <ins>***Mesh and .MAT file generation***</ins><br>
-See this brief tutorial on how to set up the **.mat** files needed to perform your own simulations. These .mat files define the geometric/spatial properties of the problem you intend to investigate. Pay special attention to how you define and identify the boundary and interface surfaces for each of the respective domains. 
+See this brief [tutorial](MESHING.md) on how to set up the **.mat** files needed to perform your own simulations. These .mat files define the geometric/spatial properties of the problem you intend to investigate. Pay special attention to how you define and identify the boundary and interface surfaces for each of the respective domains. 
 
 <ins>***Editting main_FSI.m***</ins><br>
 The only adjustments that are needed in this file to run your own simulations are 
@@ -47,7 +47,7 @@ The only adjustments that are needed in this file to run your own simulations ar
 These lines are where you indicate the names you chose for the domain specific .mat files that you will be importing into the solver as well as the prefix string that you assign to your output data.  
 
 <ins>***Editting NS_data.m and CSM_data.m***</ins><br>
-These two files are the primary locations where you define all the domain specific parameters needed for you unqiue problem. Parameters that you are able to set include: 
+These two files are the primary locations where you define all the domain specific parameters needed for your unqiue problem. Parameters that you are able to set include: 
 
 1. material properties 
 2. boundary conditions
